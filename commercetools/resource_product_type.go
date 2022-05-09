@@ -49,8 +49,8 @@ func resourceProductType() *schema.Resource {
 				Optional:    true,
 			},
 			"attribute": {
-				Description: "[Product attribute fefinition](https://docs.commercetools.com/api/projects/productTypes#attributedefinition)",
-				Type:        schema.TypeList,
+				Description: "[Product attribute definition](https://docs.commercetools.com/api/projects/productTypes#attributedefinition)",
+				Type:        schema.TypeSet,
 				Optional:    true,
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
